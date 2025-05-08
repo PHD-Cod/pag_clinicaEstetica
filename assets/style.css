@@ -1,0 +1,176 @@
+*{
+    font-family: poppins;
+    padding: 0;
+    margin: 0;
+}
+
+boby {
+    display: grid;
+    grid-template-areas: 
+    "shotter"
+    "intro"
+    "main"
+    "fotter"
+    ;
+}
+
+shotter {
+    grid-area: shotter;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: antiquewhite;
+    opacity: 75%;
+}
+
+#logo {
+    width: 5rem;
+    padding-right: 1rem;
+}
+
+nav ul {
+    text-transform: uppercase;
+    font-size: large;
+    padding: 2rem;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    padding: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#intro {
+    grid-area: intro;
+    padding: 15rem;
+    background-image: url(./img/intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.normal {
+    display: grid;
+    grid-template-areas:
+    "figure tittle tittle"
+    "figure text text"
+    ;
+    background-image: linear-gradient(600deg, #655B45,#FBF0E1, #FBF0E1);
+}
+
+h1 {
+    grid-area: tittle;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.normal div {
+    display: flex;
+    flex-direction: row;
+    grid-area: text;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.normal img {
+    grid-area: figure;
+    width: 50%;
+    height: 30rem;
+}
+
+
+.reverse {
+    display: grid;
+    grid-template-areas:
+    "tittle tittle figure"
+    "text text figure"
+    ;
+    background-image: linear-gradient(120deg,#655B45 ,#FBF0E1 , #FBF0E1);
+}
+
+h1 {
+    grid-area: tittle;
+    text-align: center;
+}
+
+.reverse div {
+    display: flex;
+    flex-direction: row;
+    grid-area: text;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.reverse img {
+    grid-area: figure;
+    width: 50%;
+    height: 30rem;
+    justify-self: end;
+}
+
+sidebar {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rem;
+    background-color:#655B45;
+}
+
+sidebar img {
+    width: 20rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 12rem;
+}
+
+contato {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+contato a {
+    opacity: 75%;
+    border-radius: 40%;
+    padding: 0.5rem;
+    margin: 0.5rem;;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+iframe {
+    width: 22rem;
+    height: 10rem;
+    padding: 1rem;
+}
