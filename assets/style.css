@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
 *{
     font-family: poppins;
     padding: 0;
@@ -27,6 +30,7 @@ shotter {
 #logo {
     width: 5rem;
     padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 nav ul {
@@ -56,19 +60,55 @@ nav ul li a {
     background-attachment: fixed;
 }
 
+main {
+        display: grid;
+        grid-template-areas: 
+        "linhaUm"
+        "linhaDois"
+        "linhaTres"
+        "linhaQuatro"
+        ;
+        background-color:#655B45;
+    }
+
 .normal {
     display: grid;
     grid-template-areas:
     "figure tittle tittle"
     "figure text text"
     ;
-    background-image: linear-gradient(600deg, #655B45,#FBF0E1, #FBF0E1);
+    background-image: linear-gradient(590deg, #655B45,#ab9981, #FBF0E1);
+    border-radius: 0% 10% 10% 0%;
+}
+
+#normalUm {
+    grid-area: linhaUm;
+    margin-top: 2rem;
+}
+
+#normalUm:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    border: 2px solid #FBF0E1;
+}
+
+#normalDois {
+    grid-area: linhaTres;
+    margin-top: 2rem;
+}
+
+#normalDois:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    border: 2px solid #FBF0E1;
 }
 
 h1 {
+    font-family: courgette;
+    font-size: 2.9rem;
     grid-area: tittle;
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 }
 
 .normal div {
@@ -85,12 +125,16 @@ li {
     padding: 1rem;
 }
 
-.normal img {
-    grid-area: figure;
-    width: 50%;
-    height: 30rem;
+li:hover {
+    color: white;
+    transition: 1s;
 }
 
+.normal img {
+    grid-area: figure;
+    width: 70%;
+    height: 25rem;
+}
 
 .reverse {
     display: grid;
@@ -98,12 +142,36 @@ li {
     "tittle tittle figure"
     "text text figure"
     ;
-    background-image: linear-gradient(120deg,#655B45 ,#FBF0E1 , #FBF0E1);
+    background-image: linear-gradient(130deg,#655B45 ,#ab9981 , #FBF0E1);
+    border-radius: 10% 0% 0% 10%;
+}
+
+#reverseUm {
+    grid-area: linhaDois;
+    margin-top: 2rem;
+}
+
+#reverseUm:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    border: 2px solid #FBF0E1;
+}
+
+#reverseDois {
+    grid-area: linhaQuatro;
+    margin-top: 2rem;
+}
+
+#reverseDois:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    border: 2px solid #FBF0E1;
 }
 
 h1 {
     grid-area: tittle;
     text-align: center;
+    font-weight: lighter;
 }
 
 .reverse div {
@@ -115,15 +183,10 @@ h1 {
     justify-content: center;
 }
 
-li {
-    list-style: none;
-    padding: 1rem;
-}
-
 .reverse img {
     grid-area: figure;
-    width: 50%;
-    height: 30rem;
+    width: 70%;
+    height: 25rem;
     justify-self: end;
 }
 
@@ -152,22 +215,21 @@ footer img {
 
 contato {
     display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
-    font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+}
+
+contato img {
+    width: 3rem;
+    padding: 1rem;
+    align-items: center;
 }
 
 contato a {
-    opacity: 75%;
-    border-radius: 40%;
-    padding: 0.5rem;
-    margin: 0.5rem;;
-}
-
-.link {
     text-decoration: none;
     color: black;
 }
+
 
 iframe {
     width: 22rem;
