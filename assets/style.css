@@ -19,18 +19,18 @@ boby {
 
 shotter {
     grid-area: shotter;
-    padding: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: antiquewhite;
     opacity: 75%;
+    justify-content: space-evenly;
 }
 
 #logo {
     width: 5rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
 }
 
 nav ul {
@@ -42,12 +42,29 @@ nav ul {
 
 nav ul li {
     display: inline;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 nav ul li a {
     text-decoration: none;
     color: black;
+}
+
+shotter .link {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    background-color: #655B45;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 5%;
+}
+
+shotter img {
+    width: 2.5rem;
 }
 
 #intro {
@@ -61,15 +78,16 @@ nav ul li a {
 }
 
 main {
-        display: grid;
-        grid-template-areas: 
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
         "linhaUm"
         "linhaDois"
         "linhaTres"
         "linhaQuatro"
         ;
-        background-color:#655B45;
-    }
+    background-color:#655B45;
+}
 
 .normal {
     display: grid;
@@ -77,13 +95,11 @@ main {
     "figure tittle tittle"
     "figure text text"
     ;
-    background-image: linear-gradient(590deg, #655B45,#ab9981, #FBF0E1);
-    border-radius: 0% 10% 10% 0%;
+    background-color: #ab9981;
 }
 
 #normalUm {
     grid-area: linhaUm;
-    margin-top: 2rem;
 }
 
 #normalUm:hover {
@@ -94,7 +110,6 @@ main {
 
 #normalDois {
     grid-area: linhaTres;
-    margin-top: 2rem;
 }
 
 #normalDois:hover {
@@ -142,13 +157,11 @@ li:hover {
     "tittle tittle figure"
     "text text figure"
     ;
-    background-image: linear-gradient(130deg,#655B45 ,#ab9981 , #FBF0E1);
-    border-radius: 10% 0% 0% 10%;
+    background-color: #655B45;
 }
 
 #reverseUm {
     grid-area: linhaDois;
-    margin-top: 2rem;
 }
 
 #reverseUm:hover {
@@ -159,7 +172,6 @@ li:hover {
 
 #reverseDois {
     grid-area: linhaQuatro;
-    margin-top: 2rem;
 }
 
 #reverseDois:hover {
@@ -172,6 +184,7 @@ h1 {
     grid-area: tittle;
     text-align: center;
     font-weight: lighter;
+    opacity: 50%;
 }
 
 .reverse div {
@@ -193,8 +206,9 @@ h1 {
 sidebar {
     display: flex;
     flex-direction: row;
+    justify-content:space-evenly;
     padding-top: 5rem;
-    background-color:#655B45;
+    background-color:gray;
 }
 
 sidebar img {
@@ -202,6 +216,7 @@ sidebar img {
 }
 
 footer {
+    grid-area: footer;
     display: flex;
     flex-direction: row;
     background-color: gray;
@@ -215,12 +230,30 @@ footer img {
 
 contato {
     display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#redes_sociais {
+    display: flex;
     flex-direction: row;
+}
+
+contato p {
+    letter-spacing: 0.2rem;
+}
+
+contato #insta {
+    width: 3rem;
+    padding: 1rem;
     align-items: center;
 }
 
-contato img {
-    width: 3rem;
+contato #face {
+    width: 2.5rem;
     padding: 1rem;
     align-items: center;
 }
@@ -228,11 +261,15 @@ contato img {
 contato a {
     text-decoration: none;
     color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: flex-start;
 }
 
 
 iframe {
-    width: 22rem;
+    width: 18rem;
     height: 10rem;
     padding: 1rem;
 }

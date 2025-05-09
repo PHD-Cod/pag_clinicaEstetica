@@ -21,9 +21,13 @@
                 <li><a href="#logo">home</a></li>
                 <li><a href="#main">procedimentos</a></li>
                 <li><a href="#estrutura">nosso espaço</a></li>
-                <li><a href="#footer">contato | localização</a></li>
+                <li><a href="#footer">localização</a></li>
             </ul>
         </nav>
+        <a class="link" href="tel:+551194721-3675">
+            <p>Entre em contato</p>
+            <img src="./assets/img/zap.png" alt="whatsapp">
+        </a>
     </shotter>
     <div id="intro"></div>
     <main id="main">
@@ -78,11 +82,11 @@
                     <li>Botox</li>
                 </ul>
                 <ul>
-                    <li>Primeiro</li>
-                    <li>Segundo</li>
-                    <li>Terceiro</li>
-                    <li>Quarto</li>
-                    <li>Quinto</li>
+                    <li>Anemia | baixo estoque de ferro</li>
+                    <li>Vitamina D</li>
+                    <li>Vitamina K2</li>
+                    <li>Vitamina B12</li>
+                    <li>Metilcobolamina</li>
                 </ul>
             </div>
             <img src="./assets/img/injetaveis.jpg" alt="tratamentos injetáveis">
@@ -91,7 +95,8 @@
             <h1>Terapias integrativas</h1>
             <div>
                 <ul>
-                    <li>Acupuntura</li>
+                    <li class="palavra-clicavel" data-texto="Acupuntura se trata da inserção de agulhas em determinados pontos.">Acupuntura</li>
+                    <div id="texto-destino"></div>
                     <li>Ozonioterapia</li>
                     <li>Ventosaterapia</li>
                     <li>Laserterapia</li>
@@ -115,26 +120,26 @@
         <img src="./assets/img/sala4.jpg" alt="sala quatro">
     </sidebar>
     <footer id="footer">
-            <contato>
-                <a class="link" href="tel:+551194721-3675">
-                    <img src="./assets/img/zap.png" alt="whatsapp">
-                </a>
+        <contato>
+            <p>redes sociais</p>
+            <div id="redes_sociais">
                 <a href="https://www.facebook.com/bruna.viana.7771?locale=pt_BR">
-                    <img src="./assets/img/face.png" alt="pagina facebook">
+                    <img id="face" src="./assets/img/face.png" alt="pagina facebook">
                 </a>
                 <a href="https://www.instagram.com/esteticaluvenna/">
-                    <img src="./assets/img/insta.png" alt="pagina instagram">
+                    <img id="insta" src="./assets/img/insta.png" alt="pagina instagram">
                 </a>
-                <a class="link" href="mailto:clinicaesteticabrunaviana@gmail.com">
-                    <img src="./assets/img/mail.png" alt="e-mail">
-                </a>
-            </contato>
+            </div>
+        </contato>
         <img src="./assets/img/preto.png" alt="Logo Luvenna Clinic">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d915.8959365269164!2d-46.7298219098257!3d-23.33085685418321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee4150af54b65%3A0xa06b6edace4b4e21!2sR.%20Lu%C3%ADs%20Vital%20Trevisan%2C%2016%20-%20Companhia%20Fazenda%20Belem%2C%20Franco%20da%20Rocha%20-%20SP%2C%2007803-130!5e0!3m2!1spt-BR!2sbr!4v1745604458727!5m2!1spt-BR!2sbr"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
+
+    <script src="./assets/main.js" ></script>
+
 </body>
 
 </html>
