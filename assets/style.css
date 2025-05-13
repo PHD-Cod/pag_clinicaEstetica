@@ -100,7 +100,7 @@ main {
 }
 
 h1 {
-    font-size: 2.9rem;
+    font-size: 2rem;
     grid-area: tittle;
     text-align: center;
     padding-top: 1.5rem;
@@ -111,6 +111,7 @@ h1 {
 li {
     list-style: none;
     padding: 1rem;
+    font-size: 1rem;
 }
 
 li:hover {
@@ -152,7 +153,7 @@ li:hover {
     grid-area: figure;
     justify-self: end;
     width: 50%;
-    height: 25rem;
+    height: 20rem;
     padding: 3rem;
 }
 
@@ -189,7 +190,7 @@ li:hover {
 .reverse img {
     grid-area: figure;
     width: 50%;
-    height: 25rem;
+    height: 20rem;
     padding: 3rem;
 }
 
