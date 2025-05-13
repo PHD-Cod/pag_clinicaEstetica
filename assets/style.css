@@ -77,6 +77,17 @@ shotter img {
     background-attachment: fixed;
 }
 
+#container {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+}
+
+#container p {
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
 main {
     grid-area: main;
     display: grid;
@@ -86,53 +97,15 @@ main {
         "linhaTres"
         "linhaQuatro"
         ;
-    background-color:#655B45;
-}
-
-.normal {
-    display: grid;
-    grid-template-areas:
-    "figure tittle tittle"
-    "figure text text"
-    ;
-    background-color: #ab9981;
-}
-
-#normalUm {
-    grid-area: linhaUm;
-}
-
-#normalUm:hover {
-    transform: scale(1.05);
-    transition: 1s;
-    border: 2px solid #FBF0E1;
-}
-
-#normalDois {
-    grid-area: linhaTres;
-}
-
-#normalDois:hover {
-    transform: scale(1.05);
-    transition: 1s;
-    border: 2px solid #FBF0E1;
 }
 
 h1 {
-    font-family: courgette;
     font-size: 2.9rem;
     grid-area: tittle;
     text-align: center;
     padding-top: 1.5rem;
-}
-
-.normal div {
-    display: flex;
-    flex-direction: row;
-    grid-area: text;
-    text-align: center;
-    width: 100%;
-    justify-content: center;
+    font-weight: lighter;
+    opacity: 50%;
 }
 
 li {
@@ -141,14 +114,46 @@ li {
 }
 
 li:hover {
-    color: white;
+    color: gray;
     transition: 1s;
+}
+
+.normal {
+    display: grid;
+    grid-template-areas:
+    "figure tittle tittle"
+    "figure text text"
+    ;
+    background-color: #FBF0E1;
+}
+
+#normalUm:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    border: 2px solid #FBF0E1;
+}
+
+#normalDois:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    border: 2px solid #FBF0E1;
+}
+
+.normal div {
+    grid-area: text;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
 }
 
 .normal img {
     grid-area: figure;
-    width: 70%;
+    justify-self: end;
+    width: 50%;
     height: 25rem;
+    padding: 3rem;
 }
 
 .reverse {
@@ -157,11 +162,7 @@ li:hover {
     "tittle tittle figure"
     "text text figure"
     ;
-    background-color: #655B45;
-}
-
-#reverseUm {
-    grid-area: linhaDois;
+    background-color: white;
 }
 
 #reverseUm:hover {
@@ -170,21 +171,10 @@ li:hover {
     border: 2px solid #FBF0E1;
 }
 
-#reverseDois {
-    grid-area: linhaQuatro;
-}
-
 #reverseDois:hover {
     transform: scale(1.05);
     transition: 1s;
     border: 2px solid #FBF0E1;
-}
-
-h1 {
-    grid-area: tittle;
-    text-align: center;
-    font-weight: lighter;
-    opacity: 50%;
 }
 
 .reverse div {
@@ -198,9 +188,9 @@ h1 {
 
 .reverse img {
     grid-area: figure;
-    width: 70%;
+    width: 50%;
     height: 25rem;
-    justify-self: end;
+    padding: 3rem;
 }
 
 sidebar {
@@ -212,7 +202,7 @@ sidebar {
 }
 
 sidebar img {
-    width: 20rem;
+    width: 25%;
 }
 
 footer {
@@ -222,10 +212,13 @@ footer {
     background-color: gray;
     align-items: center;
     justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 3rem;
 }
 
 footer img {
     width: 12rem;
+    padding-left: 5rem;
 }
 
 contato {
